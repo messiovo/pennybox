@@ -10,7 +10,6 @@ export default {
         primary: "#790997",
         light:"#FEDCFE",
         dark:"#701F58",
-        base:"#fffff"
       }
     },
   },

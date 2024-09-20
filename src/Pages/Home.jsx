@@ -1,11 +1,15 @@
 import React from "react";
+import { Hero} from '../Component/molecules';
+
+
 const Home = () => {
     return (
       <>
-      <h1>Hi there</h1>
   
+      <Hero/>
+    
       </>
     )
   }
   
-  export default Home;
+  export default Home
