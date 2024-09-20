@@ -29,7 +29,7 @@ const Nav = () => {
 
   return (
     <div className="px-5 lg:px-14 py-5 flex items-center justify-between w-full  z-20 bg-primary">
-        <div className="flex items-center justify-between gap-2">
+        <div className="flex items-center justify-between gap-2 lg:pt-0 pt-3">
             <img src={logo} alt="logo" className="lg:w-[2rem] w-[1.5rem]" />
         <h1 className="text-white lg:text-2xl text-lg">PennyBox</h1>
         </div>
@@ -37,7 +37,7 @@ const Nav = () => {
       <div
         className={`${
           !isMobile ? `translate-y-0` : `translate-y-full `
-        } lg:scale-y-100 z-20 flex lg:flex-row flex-col  lg:gap-12 gap-20 lg:px-0 px-12 lg:py-0 py-12 lg:relative lg:w-auto w-full lg:h-auto  h-screen fixed  top-16  lg:inset-auto inset-0 lg:overflow-y-hidden overflow-y-visible bg-primary text-center transition-transform duration-700 ease-in`}
+        } lg:scale-y-100 z-20 flex lg:flex-row flex-col  lg:gap-12 gap-20 lg:px-0 px-12 lg:py-0 py-12 lg:relative lg:w-auto w-full lg:h-auto  h-screen fixed  top-[5rem]  lg:inset-auto inset-0 lg:overflow-y-hidden overflow-y-visible bg-primary text-center transition-transform duration-700 ease-in`}
         onBlur={() => {
           setIsMobile(false);
         }}
