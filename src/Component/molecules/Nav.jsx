@@ -6,7 +6,7 @@ import { Links} from "../atoms";
 const navLinks = [
   {
     text: "Home",
-    to: "/",
+    to: "#home",
   },
   {
     text: "Services",
