@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import logo from "../images/logoyellow.png"
-import { Links} from "../atoms";
+import {Links} from "../atoms";
 
 
 const navLinks = [
@@ -37,16 +37,17 @@ const Nav = () => {
        
       <div
         className={`${
-          !isMobile ? `translate-y-0` : `translate-y-full `
-        } lg:scale-y-100 z-20 flex lg:flex-row flex-col  lg:gap-12 gap-20 lg:px-0 px-12 lg:py-0 py-12 lg:relative lg:w-auto w-full lg:h-auto  h-screen fixed  top-20  lg:inset-auto inset-0 lg:overflow-y-hidden overflow-y-visible bg-primary text-center transition-transform duration-700 ease-in`}
+          !isMobile ? `scale-x-0` : `scale-x-full `
+        } lg:scale-x-100 z-20 flex lg:flex-row flex-col  lg:gap-12 gap-20 lg:px-0 px-12 lg:py-0 py-12 lg:relative lg:w-auto w-full lg:h-auto  h-screen fixed  top-20  lg:inset-auto inset-0 lg:overflow-y-hidden overflow-y-visible bg-primary text-center transition-transform duration-700 ease-in`}
         onBlur={() => {
           setIsMobile(false);
         }}
+      
         tabIndex={20}
       >
         <div className="m-0 lg:m-auto  flex flex-col lg:flex-row lg:float:right lg:gap-16 gap-20">
           {navLinks.map((items) => (
-            <Links {...items} />
+            <Links key={items.text}  {...items} />
           ))}
         </div>
       </div>

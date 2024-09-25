@@ -4,7 +4,7 @@ import { Hero, CardOne, AboutUs, WhyUs, Testimonial} from '../Component/molecule
 
 const Home = () => {
     return (
-      <section className="bg-light">
+      <section>
   
       <Hero/>
       <CardOne/>
