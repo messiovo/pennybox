@@ -12,6 +12,7 @@ export default {
         dark:"#701F58",
         sec:"#feb640",
       }
+     
     },
   },
   plugins: [],

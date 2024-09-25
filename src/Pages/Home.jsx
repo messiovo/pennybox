@@ -1,5 +1,5 @@
 import React from "react";
-import { Hero, CardOne, AboutUs} from '../Component/molecules';
+import { Hero, CardOne, AboutUs, WhyUs} from '../Component/molecules';
 
 
 const Home = () => {
@@ -9,6 +9,7 @@ const Home = () => {
       <Hero/>
       <CardOne/>
       <AboutUs/>
+      <WhyUs/>
     
       </>
     )
