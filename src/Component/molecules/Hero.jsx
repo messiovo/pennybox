@@ -15,12 +15,12 @@ const Hero = () => {
             </div>
             <div className="flex items-center justify-center lg:mt-16 lg:my-0 my-10">
                 <Link to="/contact">
-                    <button className="text-white bg-dark py-2 lg:px-14 px-5 block hover:bg-light hover:text-dark transition-colors ease-in-out duration-500 ">
+                    <button className="text-sec bg-dark py-2 lg:px-14 px-5 block hover:bg-sec hover:text-dark transition-colors ease-in-out duration-500 ">
                         Request Loan
                     </button>
                 </Link>
                 <Link to="/contact">
-                    <button className="text-dark bg-light py-2 lg:px-14 px-5 mx-auto block hover:bg-dark hover:text-white transition-colors ease-in-out duration-500 ">
+                    <button className="text-dark bg-light py-2 lg:px-14 px-5 mx-auto block hover:bg-sec hover:text-dark transition-colors ease-in-out duration-500 ">
                         Save with us
                     </button>
                 </Link>

@@ -37,7 +37,7 @@ const Nav = () => {
       <div
         className={`${
           !isMobile ? `translate-y-0` : `translate-y-full `
-        } lg:scale-y-100 z-20 flex lg:flex-row flex-col  lg:gap-12 gap-20 lg:px-0 px-12 lg:py-0 py-12 lg:relative lg:w-auto w-full lg:h-auto  h-screen fixed  top-[]  lg:inset-auto inset-0 lg:overflow-y-hidden overflow-y-visible bg-primary text-center transition-transform duration-700 ease-in`}
+        } lg:scale-y-100 z-20 flex lg:flex-row flex-col  lg:gap-12 gap-20 lg:px-0 px-12 lg:py-0 py-12 lg:relative lg:w-auto w-full lg:h-auto  h-screen fixed  top-20  lg:inset-auto inset-0 lg:overflow-y-hidden overflow-y-visible bg-primary text-center transition-transform duration-700 ease-in`}
         onBlur={() => {
           setIsMobile(false);
         }}
@@ -55,8 +55,8 @@ const Nav = () => {
         onBlur={() => setIsMobile(false)}
         tabIndex={10}
       >
-        <span className={`${!isMobile ? "rotate-0" : "rotate-45"} w-full h-[2px] bg-white block transition-all duration-700 ease-in-out `}></span>
-        <span className={`${!isMobile ? "rotate-0" : "rotate-[-45deg] translate-y-[-7px]"} w-full h-[2px] bg-white block mt-1.5 transition-all duration-700 ease-in-out `}></span>
+        <span className={`${!isMobile ? "rotate-0" : "rotate-45"} w-full h-[2px] bg-sec block transition-all duration-700 ease-in-out `}></span>
+        <span className={`${!isMobile ? "rotate-0" : "rotate-[-45deg] translate-y-[-7px]"} w-full h-[2px] bg-sec block mt-1.5 transition-all duration-700 ease-in-out `}></span>
       </div>
     </div>
   );

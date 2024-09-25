@@ -1,5 +1,5 @@
 import React from "react";
-import { Hero} from '../Component/molecules';
+import { Hero, CardOne} from '../Component/molecules';
 
 
 const Home = () => {
@@ -7,6 +7,7 @@ const Home = () => {
       <>
   
       <Hero/>
+      <CardOne/>
     
       </>
     )
