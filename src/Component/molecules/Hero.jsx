@@ -26,7 +26,7 @@ const Hero = () => {
                 </Link>
             </div>
         </div>
-        <div className="lg:w-2/4  w-full">
+        <div className="lg:w-2/4  w-full lg:pt-0 pt-[5rem]">
         <img src={hero} alt="hero" className="h-auto"/>
       </div>
     </section>      

@@ -24,7 +24,7 @@ const cardDetails = [
 
 const CardOne = () => {
   return (
-    <div className="bg-light lg:px-16 px-8 lg:py-16 py-10 ">
+    <div className="lg:px-16 px-8 lg:py-16 py-10 " id="services">
         <div className="flex flex-row items-center">
         <h1 className="text-primary  lg:text-3xl text-2xl font-bold lg:pr-10 lg:text-left">What we do</h1>
         <span className="h-[2px] lg:w-3/4 w-full bg-primary lg:block hidden"></span>

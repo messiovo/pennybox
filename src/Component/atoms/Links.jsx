@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 
 const Links = ({ text, to }) => {
   const [isMobile, setIsMobile] = useState(false);

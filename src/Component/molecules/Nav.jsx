@@ -9,16 +9,17 @@ const navLinks = [
     to: "/",
   },
   {
-    text: "About",
-    to: "/about",
+    text: "Services",
+    to: "#services",
   },
   {
-    text: "Services",
-    to: "/services",
+    text: "About",
+    to: "#about",
   },
+  
   {
     text: "Contact",
-    to: "/contact",
+    to: "#contact",
   }
 ];
 const Nav = () => {
@@ -28,7 +29,7 @@ const Nav = () => {
   };
 
   return (
-    <div className="px-5 lg:px-14 py-5 flex items-center justify-between w-full  z-20 bg-primary">
+    <div className="px-5 lg:px-14 py-5 flex items-center justify-between w-full  z-20 bg-primary fixed">
         <div className="flex items-center justify-between gap-2 lg:pt-0 pt-3">
             <img src={logo} alt="logo" className="lg:w-[3rem] w-[2rem]" />
         <h1 className="text-sec lg:text-2xl text-lg">PennyBox</h1>

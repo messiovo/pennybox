@@ -2,7 +2,7 @@ import React from "react";
 import pic from "../images/about.webp"
 const AboutUs = () => {
   return (
-    <section className="flex lg:flex-row-reverse flex-col-reverse bg-primary text-sec lg:gap-2 gap-10">
+    <section className="flex lg:flex-row-reverse flex-col-reverse bg-primary text-sec lg:gap-2 gap-10" id="about">
       <div className="lg:w-2/4 w-full lg:px-16 px-8 lg:pt-16 pt-4">
         <h1 className="lg:text-3xl text-2xl font-bold pb-4">
           About Us
