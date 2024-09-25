@@ -8,7 +8,7 @@ function WhyUs() {
         <p className='lg:text-base text-sm lg:pb-10 pb-6 leading-6'>We pride ourselves on offering loans with some of the best interest rates in the market. Whether you’re a small business owner or an individual looking for financial support, our competitive rates help you manage your finances effectively while reducing the cost of borrowing.</p>
         <Link to="/contact">
                     <button className="text-sec bg-dark py-2 lg:px-14 px-5 mx-auto block font-semibold hover:bg-sec hover:text-dark transition-colors ease-in-out duration-500 ">
-                        Get a Loan
+                        Get Loan
                     </button>
                 </Link>
     </div>
