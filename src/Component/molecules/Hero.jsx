@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <>
       <Nav /> 
-      <section className="flex justify-between lg:flex-row flex-col-reverse bg-medium text-white bg-primary">
+      <section className="flex justify-between lg:flex-row flex-col-reverse bg-medium text-sec bg-primary">
         <div className="lg:w-2/4  w-full lg:px-14 px-5">
             <div className="flex flex-col items-center lg:gap-6 gap-3">
                 <h1 className="lg:text-6xl text-2xl text-center lg:py-6 py-3">EMPOWERING SMES THROUGH THE PROVISIONS OF QUICK <b>LOANS </b></h1>
