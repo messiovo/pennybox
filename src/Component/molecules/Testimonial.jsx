@@ -1,11 +1,10 @@
 import React from "react";
 import { Card2 } from "../atoms";
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 import 'swiper/css';
-import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
+import 'swiper/css/navigation';
+import { Autoplay, Navigation } from 'swiper/modules';
 
 
 const card= [
@@ -27,6 +26,24 @@ const card= [
     name:
       "Mr. Joshua ",
   },
+  {
+    index:4,
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+    name:
+      "Iya Basirat",
+  },
+  {
+    index:5,
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+    name:
+      "Samuel Tailors",
+  },
+  {
+    index:6,
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+    name:
+      "Mr. Joshua ",
+  },
 ];
 
 const Testimonial = () => {
@@ -37,15 +54,26 @@ const Testimonial = () => {
             <span className="h-[2px] lg:w-3/4 w-full bg-primary lg:block hidden"></span>
         </div>
         <Swiper
-       modules={[Navigation, Pagination, Scrollbar, A11y]}
-       spaceBetween={50}
-       slidesPerView={3}
-       navigation
-       pagination={{ clickable: true }}
-       scrollbar={{ draggable: true }}
-       onSwiper={(swiper) => console.log(swiper)}
-       onSlideChange={() => console.log('slide change')}
-      className="pt-10"
+        breakpoints={
+          {
+            340:{
+              slidesPerView:1,
+            },
+            700:{
+              slidesPerView:3,
+            },
+          }
+        }
+       spaceBetween={30}
+        centeredSlides={true}
+        autoplay={{
+          delay: 3000,
+          disableOnInteraction: false,
+        }}
+        navigation={true}
+        modules={[Autoplay, Navigation]}
+
+      className="lg:py-16 py-10 flex items-center justify-center"
     >
       
         
