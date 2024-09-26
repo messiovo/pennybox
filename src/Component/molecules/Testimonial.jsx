@@ -4,45 +4,38 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import { Autoplay, Navigation } from 'swiper/modules';
-
+import { Autoplay, Pagination } from 'swiper/modules';
 
 const card= [
   {
     index:1,
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
-    name:
-      "Iya Basirat",
+    text: "When I wanted to start my indomie wholesale business, I reached out to PennyBox and after going through the necessary verification, I was granted a loan at an affordable interest rate",
+    name:"Iya Basirat",
   },
   {
     index:2,
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
-    name:
-      "Samuel Tailors",
+    text: "I wanted to expand my business and build another tailor shop at another location. PennBox helped me to accomplished this",
+    name:"Samuel Tailors",
   },
   {
     index:3,
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
-    name:
-      "Mr. Joshua ",
+    text: "I had issue with paying my rent, I collected loan from PennyBox at a good interest rate, and I was able to pay back with a monthly installation of my salary",
+    name:"Miss Juliet ",
   },
   {
     index:4,
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
-    name:
-      "Iya Basirat",
+    text: "When I wanted to start my indomie wholesale business, I reached out to PennyBox and after going through the necessary verification, I was granted a loan at an affordable interest rate",
+    name:"Iya Basirat",
   },
   {
     index:5,
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
-    name:
-      "Samuel Tailors",
+    text: "I wanted to expand my business and build another tailoring shop at another location. PennBox helped me to accomplished this",
+    name:"Samuel Tailors",
   },
   {
     index:6,
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
-    name:
-      "Mr. Joshua ",
+    text: "I had issue with paying my rent, I collected loan from PennyBox at a good interest rate, and I was able to pay back with a monthly installation of my salary",
+    name:"Miss Juliet ",
   },
 ];
 
@@ -65,20 +58,21 @@ const Testimonial = () => {
           }
         }
        spaceBetween={30}
-        centeredSlides={true}
         autoplay={{
           delay: 3000,
           disableOnInteraction: false,
         }}
-        navigation={true}
-        modules={[Autoplay, Navigation]}
+        pagination={{
+          clickable: true,
+        }}
+        modules={[Autoplay, Pagination]}
 
-      className="lg:py-16 py-10 flex items-center justify-center"
+      className="py-10 flex flex-row items-center justify-center lg:px-7 px-5"
     >
       
         
         {card.map((items) =>(
-          <SwiperSlide  >
+          <SwiperSlide className="cursor-pointer"  >
              <Card2 key={items.title} {...items} />
           </SwiperSlide>
          ))}
