@@ -22,7 +22,7 @@ const cardDetails = [
   },
 ];
 
-const CardOne = () => {
+const Service = () => {
   return (
     <div className="lg:px-16 px-8 lg:py-16 py-10 " id="services">
         <div className="flex flex-row items-center">
@@ -38,4 +38,4 @@ const CardOne = () => {
   );
 };
 
-export default CardOne;
+export default Service;

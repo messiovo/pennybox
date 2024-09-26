@@ -1,5 +1,5 @@
 import React from "react";
-import { Hero, CardOne, AboutUs, WhyUs, Testimonial} from '../Component/molecules';
+import { Hero, Service, AboutUs, WhyUs, Testimonial} from '../Component/molecules';
 
 
 const Home = () => {
@@ -7,7 +7,7 @@ const Home = () => {
       <section>
   
       <Hero/>
-      <CardOne/>
+      <Service/>
       <AboutUs/>
       <WhyUs/>
       <Testimonial/>
