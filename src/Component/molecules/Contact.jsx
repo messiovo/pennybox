@@ -3,12 +3,13 @@ import {Address, Email, Phone} from '../../assets/icons';
 
 const Contact= ()=>{
   return (
-    <section className='bg-primary pb-10' id='contact'>
+    <section className='bg-primary' id='contact'>
+    <div className='bg-primary' >
          <h1 className="lg:text-3xl text-2xl font-bold pb-6 text-sec text-center py-6">
                 Contact Us
             </h1>
     <main className='flex flex-col-reverse lg:flex-row' >
-            <div className='lg:w-2/4 w-full lg:px-16 px-8 lg:pt-16 pt-4 flex flex-col items-center gap-6'>
+            <div className='lg:w-2/4 w-full lg:px-16 px-8 lg:pt-16 pt-4 flex flex-col items-center gap-6 lg:pb-0 pb-10'>
             <div className='bg-light text-dark w-[15rem] flex flex-col items-center py-10 px-5'>
                 <span className='flex gap-4 pb-4'>
                     <Address/>
@@ -55,6 +56,7 @@ const Contact= ()=>{
                 </iframe>
             </div>  
     </main>
+    </div>
     </section>
   )
 }
